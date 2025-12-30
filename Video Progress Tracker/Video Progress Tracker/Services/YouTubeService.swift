@@ -69,6 +69,7 @@ struct YouTubeService {
         // Short URL: youtu.be/VIDEO_ID
         if url.host == "youtu.be" || url.host == "www.youtu.be" {
             let path = url.path.trimmingCharacters(in: CharacterSet(charactersIn: "/"))
+            let path = url.path.trimmingCharacters(in: CharacterSet(charactersIn: "/"))
             if path.count >= 11 {
                 return String(path.prefix(11))
             }
